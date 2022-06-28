@@ -2,11 +2,11 @@
 
 The main goal of the experiments was to examine if GAN-generated data makes classification models more prone to biases. We selected a skin lesion ISIC dataset for distinguishing between malignant and benign lesions.
 
-Generated data, annotations and additionall results can be downloaded (https://drive.google.com/drive/folders/1ib7b5sopgUEK9TxqEPhgjD7XEdZXBvuV?usp=sharing)[here]
+Generated data, annotations and additionall results can be downloaded [here](https://drive.google.com/drive/folders/1ib7b5sopgUEK9TxqEPhgjD7XEdZXBvuV?usp=sharing)
 
 Our procedure consists of three main steps: data generation, manual artifacts annotation and counterfactual bias insertion. The steps are below:
 
-!(im/idea_new.png)
+![The procedure behind (de)biasing effect of using GAN-based data augmentation](im/idea_new.png)
 
 ## Annotated examples
 
@@ -17,7 +17,7 @@ Based on the literature, we selected four types of artifacts for annotations: ha
 * Rulers can come in different shapes and colors, either fully or partially visible. 
 * Other are any other artifacts visible that are not as common as ruler marks, frames, and hair. It includes dermatoscopic gel or air bubbles, ink or surgical pen markings, patches and papers, dates and numbers, background parts, light reflection, and dust.
 
-!(im/artifacts.png)
+![Example artifacts in real data](im/artifacts.png)
 
 The annotation process was carried out by a trained professional working with the ISIC collection and identification of its biases for over 4 years. Additionally, we measured Inter-Annotator Agreement on a small subsample of data. The mean Cohen’s kappa coefficient was over 70%, with the highest values on ruler annotations and lowest on the other.
 
@@ -31,7 +31,9 @@ Bias is often defined as a systematic error from erroneous assumptions in the le
   
 By 'bias in models', we refer to the broad term of the algorithmic bias. Some sources define an algorithmic bias as amplifying existing inequities in, e.g., socioeconomic status, race, or ethnic background by an algorithm.
 
-!(im/example_artifacts.png)
+![Example artifacts in real and GAN generated data](im/example_artifacts.png)
+
+
 
 
 ## Descriptive statistics
@@ -54,7 +56,7 @@ The counterfactual bias insertion analysis supported the theory of GANs (de)bias
 
 | bias   	| data     	|   switched   	|                	|              	|                      	|                      	|   F_1 (%)   	|                	|               	|                	|
 |-----------------	|-------------------	|:------------:	|---------------:	|-------------:	|---------------------:	|---------------------:	|:--------------:	|---------------:	|--------------:	|---------------:	|
-|        	|          	|         mean 	|        std^1 	|       median 	|           mal to ben 	|           ben to mal 	| F_1 	|            aug 	|       std^2 	|           mean 	|
+|        	|          	|         mean 	|        std 	|       median 	|           mal to ben 	|           ben to mal 	| F_1 	|            aug 	|       std 	|           mean 	|
 | frame  	| real              	|          129 	|         119.39 	|           77 	|          24 (2.39%) 	|         104 (1.60%) 	|          91.99 	|          88.97 	|          4.01 	|          90.48 	|
 |                 	| aug. cGAN         	|          223 	|          55.25 	|          199 	|          40 (3.88%) 	|         183 (2.81%) 	|          89.65 	|          84.93 	|          2.26 	|          87.29 	|
 |        	| aug. GAN 	|  59 	|          16.07 	|  51 	| 22 (2.19%) 	| 37 (0.57%) 	| 91.52 	| 90.49 	|          0.61 	| 91.01 	|
