@@ -8,6 +8,47 @@ Our procedure consists of three main steps: data generation, manual artifacts an
 
 ![The procedure behind (de)biasing effect of using GAN-based data augmentation](im/idea_new.png)
 
+## Synthetic data generation and classification
+
+Image generation was performed using the StyleGAN2-ADA modified implementation from NVIDIA Research group, which is available on GitHub repository: [https://github.com/aidotse/stylegan2-ada-pytorch](https://github.com/aidotse/stylegan2-ada-pytorch).
+
+The conditional GAN (cGAN) for 2 classes and unconditional GAN (for each class separately) training and validation procedure consists of following steps:
+1. [Preparing ISIC 2020 dataset](https://github.com/aidotse/stylegan2-ada-pytorch#preparing-datasets)
+    
+    In case of cGAN training, during dataset preparation, also file called 'dataset.json' that should be placed at the dataset root folder, has to be created.  
+    This file has the following structure:
+    ```json
+        {
+            "labels": [
+                ["ISIC_0000002.jpg",1],
+                ["ISIC_0000004.jpg",1],
+                ... repeated for every image in the datase
+                ["ISIC_9998240.jpg.jpg",0]
+            ]
+        }
+    ```
+    0 or 1 label indicates the bening or malignant class, respectively. 
+    If the 'dataset.json' file cannot be found, the dataset is interpreted as not containing class labels.
+2. [SyleGAN2-ADA training with or without additional labels](https://github.com/aidotse/stylegan2-ada-pytorch#training-new-networks---nvidia-resources)
+   ```bash
+   python train.py --outdir=~/training-runs --data=~/mydataset.zip --gpus=1          % unconditional example
+   python train.py --outdir=~/training-runs --data=~/mydataset.zip --gpus=1 --cond=1 % conditional example
+   ```
+3. [EfficientNet-B2 training using only real, real+artificial and only artificial data](https://github.com/aidotse/stylegan2-ada-pytorch#classification-with-efficientnet-b2)
+   
+   Example with training using mixed real and synthetic data with 0 images of artificial bening samples and 15k images of malignant samples:
+   ```
+   python melanoma_classifier.py --syn_data_path=~/generated/  \
+    --real_data_path=~/melanoma-external-malignant-256/ \
+    --synt_n_imgs="0,15"
+   ```
+4. [Making predictions with trained classifier on real data](https://github.com/aidotse/stylegan2-ada-pytorch/blob/main/predict.py)
+   ```
+   python predict.py --data_path=~/melanoma-external-malignant-256/ \
+    --model_path=classifier_efficientnet-b2_nonconditional_train_reals+15melanoma.pth \
+    --seeds 0-24999
+   ```
+
 ## Annotated examples
 
 Based on the literature, we selected four types of artifacts for annotations: hair, frames, rulers and other.
@@ -32,9 +73,6 @@ Bias is often defined as a systematic error from erroneous assumptions in the le
 By 'bias in models', we refer to the broad term of the algorithmic bias. Some sources define an algorithmic bias as amplifying existing inequities in, e.g., socioeconomic status, race, or ethnic background by an algorithm.
 
 ![Example artifacts in real and GAN generated data](im/example_artifacts.png)
-
-
-
 
 ## Descriptive statistics
 
