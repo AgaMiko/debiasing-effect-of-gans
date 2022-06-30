@@ -66,7 +66,7 @@ The annotation process was carried out by a trained professional working with th
 
 Bias is often defined as a systematic error from erroneous assumptions in the learning algorithm. In this work, we focused primarily on bias in data and models. With the term 'bias in data,' we refer to four common data biases in machine learning (ML): 
 * observer bias which might appear when annotators use personal opinion to label data
-* sampling bias when not all samples have the same sampling probability~\cite{mehrabi2021survey;
+* sampling bias when not all samples have the same sampling probability [N. Mehrabi et al.](https://dl.acm.org/doi/abs/10.1145/3457607);
 * data handling bias when the way of handling the data distort the classifier's output;
 * instrument bias meaning imperfections in the instrument or method used to collect the data.
   
