@@ -120,3 +120,20 @@ The counterfactual bias insertion analysis supported the theory of GANs (de)bias
 |                 	| aug. GAN 	|  54 	| 50.91 	|  32 	| 37 (3.64%) 	| 17 (0.26%) 	| 91.52 	| 89.55 	| 2.40 	| 90.54 	|
 |                 	| synth. cGAN       	|          249 	|         135.44 	|          282 	|        221 (21.67%) 	|          28 (0.43%) 	|          80.39 	|          78.80 	|          1.31 	|          79.60 	|
 |                 	| synth. GAN        	|          380 	|         445.91 	|          191 	|          57 (5.62%) 	|         323 (4.96%) 	|          76.04 	|          70.36 	|          9.30 	|          73.20 	|
+
+
+# Citing
+
+Our results were accepted to publish at MICCAI 2022. Preprint is avaiable at arXiv: [The (de)biasing effect of GAN-based augmentation methods on skin lesion images](https://arxiv.org/abs/2206.15182)
+
+```
+@misc{https://doi.org/10.48550/arxiv.2206.15182,
+  doi = {10.48550/ARXIV.2206.15182},
+  url = {https://arxiv.org/abs/2206.15182},
+  author = {Mikołajczyk, Agnieszka and Majchrowska, Sylwia and Limeros, Sandra Carrasco},
+  title = {The (de)biasing effect of GAN-based augmentation methods on skin lesion images},
+  publisher = {arXiv},
+  year = {2022},
+  }
+
+```
