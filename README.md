@@ -130,7 +130,7 @@ Our results were accepted to publish at MICCAI 2022. Preprint is avaiable at arX
 @misc{https://doi.org/10.48550/arxiv.2206.15182,
   doi = {10.48550/ARXIV.2206.15182},
   url = {https://arxiv.org/abs/2206.15182},
-  author = {Mikołajczyk, Agnieszka and Majchrowska, Sylwia and Limeros, Sandra Carrasco},
+  author = {Mikołajczyk, Agnieszka and Majchrowska, Sylwia and Carrasco Limeros, Sandra},
   title = {The (de)biasing effect of GAN-based augmentation methods on skin lesion images},
   publisher = {arXiv},
   year = {2022},
