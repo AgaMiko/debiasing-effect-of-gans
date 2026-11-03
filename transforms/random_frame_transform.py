@@ -18,8 +18,7 @@ class RandomFrameTransform:
         self.rand_rotate = rand_rotate
 
     def __call__(self, image,  **params):
-        p = random.randint(0, 100)
-        if p < self.p*100:
+        if random.random() < self.p:
             mask_nr = random.randint(0, self.len-1)
             mask = Image.open(self.mask_list[mask_nr]).convert('L')
             mask = mask.resize((self.im_size, self.im_size), Image.ANTIALIAS)

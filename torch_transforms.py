@@ -7,12 +7,16 @@ from transforms.random_frame_transform import RandomFrameTransform
 def get_augmentation(transform):
     return lambda img:np.array(img)
 
-def get_transforms(image_size, type_aug='frame', aug_p=1.0, mask_list=""):
+def get_transforms(image_size, type_aug='frame', aug_p=1.0, mask_list="", im_dir=None):
+    type_aug = type_aug.replace("hair-", "")
     if type_aug in ["short", "medium", "dense", "ruler"]:
+        if not im_dir:
+            raise ValueError(
+                "Hair and ruler insertion needs im_dir: the directory with the source images of the masks.")
         transforms_train = transforms.Compose([
             transforms.Resize(image_size),
             transforms.CenterCrop(image_size),
-            RandomHairTransform(p=aug_p, mask_list=mask_list),
+            RandomHairTransform(p=aug_p, mask_list=mask_list, im_dir=im_dir),
             transforms.ToTensor(),
             transforms.Normalize([0.485, 0.456, 0.406], 
                                 [0.229, 0.224, 0.225]),
@@ -26,6 +30,8 @@ def get_transforms(image_size, type_aug='frame', aug_p=1.0, mask_list=""):
         transforms.Normalize([0.485, 0.456, 0.406], 
                     [0.229, 0.224, 0.225]),
     ])
+    else:
+        raise ValueError(f"Unknown augmentation type: {type_aug}")
     transforms_val = transforms.Compose([
         transforms.Resize(image_size),
         transforms.CenterCrop(image_size),

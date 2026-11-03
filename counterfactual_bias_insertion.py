@@ -36,11 +36,17 @@ def get_args_parser():
         help="path to directory with augmentation masks for CBI experiments"
     )
     parser.add_argument(
+        "--hair_source_dir",
+        type=str,
+        default=None,
+        help="path to directory with source images for hair and ruler masks (same file names as the masks)"
+    )
+    parser.add_argument(
         "--augmentation_names",
         type=str,
         default=["frame", "hair-short", "hair-medium", "hair-dense", "ruler"],
         nargs='+',
-        help="path to directory with augmentation masks for CBI experiments"
+        help="names of the bias types to test; each must be a subdirectory of cbi_masks_dir"
     )
     parser.add_argument(
         "--save_results_path",
@@ -59,13 +65,14 @@ def get_args_parser():
 
 def make_prediction(batch, model):
     """
-    Calculates predictions for given batch of in puts.
+    Calculates predictions for given batch of inputs.
     """
     images, labels = batch
-    outputs = model(images)
-    prob = torch.sigmoid(outputs).item()
-    predicted = 1 if prob > 0.5 else 0
-    return prob, predicted, labels.item()
+    with torch.no_grad():
+        outputs = model(images.to("cuda"))
+    probs = torch.sigmoid(outputs).squeeze(1).cpu().numpy()
+    predicted = [1 if prob > 0.5 else 0 for prob in probs]
+    return list(probs), predicted, labels.tolist()
 
 
 def switched_score(pred_labels, aug_labels):
@@ -118,7 +125,7 @@ def main(args):
         # load trained classification model
         arch = EfficientNet.from_pretrained('efficientnet-b2')
         model = Net(arch=arch)
-        model.load_state_dict(torch.load(args.models_dir + model_name,
+        model.load_state_dict(torch.load(model_name,
                                          map_location=torch.device("cuda"))
                               )
         model.eval()
@@ -127,10 +134,11 @@ def main(args):
         for aug_nr, aug_type in enumerate(args.augmentation_names):
             mask_dir = os.path.join(args.cbi_masks_dir, aug_type)
 
-            mask_list = glob.glob(mask_dir + "*")
+            mask_list = sorted(glob.glob(os.path.join(mask_dir, "*")))
             for aug_name in mask_list:
                 aug_transform, _ = get_transforms(
-                    img_size, type_aug=args.augmentation_names[aug_nr], aug_p=1.0, mask_list=[aug_name])
+                    img_size, type_aug=aug_type, aug_p=1.0, mask_list=[aug_name],
+                    im_dir=args.hair_source_dir)
                 aug_set = datasets.ImageFolder(root=args.test_data_dir,
                                                transform=aug_transform,
                                                )
@@ -152,14 +160,14 @@ def main(args):
                     probability_aug, predicted_class_aug, labels = make_prediction(
                         batch_aug, model)
 
-                    preds.append(predicted_class)
-                    preds_aug.append(predicted_class_aug)
+                    preds.extend(predicted_class)
+                    preds_aug.extend(predicted_class_aug)
 
-                    org_labels.append(labels)
-                    prob_diff.append(np.abs(probability-probability_aug))
+                    org_labels.extend(labels)
+                    prob_diff.extend(np.abs(np.array(probability) - np.array(probability_aug)))
 
-                    pred_labels.append(classes[predicted_class])
-                    aug_labels.append(classes[predicted_class_aug])
+                    pred_labels.extend(classes[c] for c in predicted_class)
+                    aug_labels.extend(classes[c] for c in predicted_class_aug)
 
                 print("===============SUMMARY===============")
                 print(model_name)

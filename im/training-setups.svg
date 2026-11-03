@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 390" width="900" height="390" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect x="1" y="1" width="898" height="388" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+<text x="30" y="44" font-size="20" fill="#0f172a" font-weight="bold" text-anchor="start">Five training data setups</text>
+<text x="30" y="68" font-size="14" fill="#64748b" font-weight="normal" text-anchor="start">Each EfficientNet-B2 classifier was trained on one of these. The names match the results tables below.</text>
+<rect x="24" y="94" width="852" height="40" rx="10" fill="#f8fafc"/>
+<text x="44" y="119" font-size="15" fill="#0f172a" font-weight="bold" text-anchor="start">real</text>
+<rect x="180" y="100" width="140" height="28" rx="14" fill="#ffffff" stroke="#cbd5e1"/>
+<circle cx="198" cy="114" r="6" fill="#2a78d6"/>
+<text x="212" y="119" font-size="13" fill="#334155" font-weight="normal" text-anchor="start">real images</text>
+<text x="520" y="119" font-size="13" fill="#64748b" font-weight="normal" text-anchor="start">Real ISIC images only</text>
+<rect x="24" y="140" width="852" height="40" rx="10" fill="#ffffff"/>
+<text x="44" y="165" font-size="15" fill="#0f172a" font-weight="bold" text-anchor="start">aug. cGAN</text>
+<rect x="180" y="146" width="140" height="28" rx="14" fill="#ffffff" stroke="#cbd5e1"/>
+<circle cx="198" cy="160" r="6" fill="#2a78d6"/>
+<text x="212" y="165" font-size="13" fill="#334155" font-weight="normal" text-anchor="start">real images</text>
+<text x="328" y="165" font-size="16" fill="#64748b" font-weight="bold" text-anchor="middle">+</text>
+<rect x="340" y="146" width="140" height="28" rx="14" fill="#ffffff" stroke="#cbd5e1"/>
+<circle cx="358" cy="160" r="6" fill="#eb6834"/>
+<text x="372" y="165" font-size="13" fill="#334155" font-weight="normal" text-anchor="start">cGAN images</text>
+<text x="520" y="165" font-size="13" fill="#64748b" font-weight="normal" text-anchor="start">Real images plus images from the conditional GAN</text>
+<rect x="24" y="186" width="852" height="40" rx="10" fill="#f8fafc"/>
+<text x="44" y="211" font-size="15" fill="#0f172a" font-weight="bold" text-anchor="start">aug. GAN</text>
+<rect x="180" y="192" width="140" height="28" rx="14" fill="#ffffff" stroke="#cbd5e1"/>
+<circle cx="198" cy="206" r="6" fill="#2a78d6"/>
+<text x="212" y="211" font-size="13" fill="#334155" font-weight="normal" text-anchor="start">real images</text>
+<text x="328" y="211" font-size="16" fill="#64748b" font-weight="bold" text-anchor="middle">+</text>
+<rect x="340" y="192" width="140" height="28" rx="14" fill="#ffffff" stroke="#cbd5e1"/>
+<circle cx="358" cy="206" r="6" fill="#1baf7a"/>
+<text x="372" y="211" font-size="13" fill="#334155" font-weight="normal" text-anchor="start">GAN images</text>
+<text x="520" y="211" font-size="13" fill="#64748b" font-weight="normal" text-anchor="start">Real images plus images from the unconditional GANs</text>
+<rect x="24" y="232" width="852" height="40" rx="10" fill="#ffffff"/>
+<text x="44" y="257" font-size="15" fill="#0f172a" font-weight="bold" text-anchor="start">synth. cGAN</text>
+<rect x="180" y="238" width="140" height="28" rx="14" fill="#ffffff" stroke="#cbd5e1"/>
+<circle cx="198" cy="252" r="6" fill="#eb6834"/>
+<text x="212" y="257" font-size="13" fill="#334155" font-weight="normal" text-anchor="start">cGAN images</text>
+<text x="520" y="257" font-size="13" fill="#64748b" font-weight="normal" text-anchor="start">Images from the conditional GAN only</text>
+<rect x="24" y="278" width="852" height="40" rx="10" fill="#f8fafc"/>
+<text x="44" y="303" font-size="15" fill="#0f172a" font-weight="bold" text-anchor="start">synth. GAN</text>
+<rect x="180" y="284" width="140" height="28" rx="14" fill="#ffffff" stroke="#cbd5e1"/>
+<circle cx="198" cy="298" r="6" fill="#1baf7a"/>
+<text x="212" y="303" font-size="13" fill="#334155" font-weight="normal" text-anchor="start">GAN images</text>
+<text x="520" y="303" font-size="13" fill="#64748b" font-weight="normal" text-anchor="start">Images from the unconditional GANs only</text>
+<text x="30" y="345" font-size="13" fill="#334155" font-weight="normal" text-anchor="start">cGAN: one conditional StyleGAN2-ADA trained on both classes.</text>
+<text x="30" y="366" font-size="13" fill="#334155" font-weight="normal" text-anchor="start">GAN: a separate unconditional StyleGAN2-ADA trained for each class.</text>
+</svg>

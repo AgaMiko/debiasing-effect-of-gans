@@ -1,0 +1,8 @@
+torch
+torchvision
+efficientnet_pytorch
+# the transforms use Image.ANTIALIAS, removed in Pillow 10
+Pillow<10
+numpy
+scikit-learn
+tqdm

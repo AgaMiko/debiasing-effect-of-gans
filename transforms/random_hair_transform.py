@@ -1,6 +1,7 @@
 import torchvision.transforms.functional as TF
 from PIL import Image, ImageFilter
 import random
+import os
 import numpy
 
 
@@ -22,13 +23,13 @@ class RandomHairTransform:
         self.rand_rotate = rand_rotate
 
     def __call__(self, image, rand_rotate=False, **params):
-        p = random.randint(0, 100)
-        if p < self.p*100:
+        if random.random() < self.p:
             if type(image).__module__ == 'numpy':
                 image = Image.fromarray(image)
 
             hair_nr = random.randint(0, self.len-1)
-            im_path = self.im_dir + self.mask_list[hair_nr].split("/")[-1]
+            im_path = os.path.join(
+                self.im_dir, os.path.basename(self.mask_list[hair_nr]))
             mask = Image.open(self.mask_list[hair_nr]).convert('L')
             im = Image.open(im_path).convert('RGB')
 

@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 476" width="900" height="476" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect x="1" y="1" width="898" height="474" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+<text x="30" y="44" font-size="20" fill="#0f172a" font-weight="bold" text-anchor="start">How often each artifact appears</text>
+<text x="30" y="68" font-size="14" fill="#64748b" font-weight="normal" text-anchor="start">Number of images with each artifact, out of 1000 benign and 1000 malignant images per source (manual annotations).</text>
+<rect x="30" y="88" width="12" height="12" rx="3" fill="#2a78d6"/>
+<text x="48" y="99" font-size="13" fill="#334155" font-weight="normal" text-anchor="start">real data</text>
+<rect x="180" y="88" width="12" height="12" rx="3" fill="#eb6834"/>
+<text x="198" y="99" font-size="13" fill="#334155" font-weight="normal" text-anchor="start">cGAN generated</text>
+<rect x="330" y="88" width="12" height="12" rx="3" fill="#1baf7a"/>
+<text x="348" y="99" font-size="13" fill="#334155" font-weight="normal" text-anchor="start">GAN generated</text>
+<text x="70" y="128" font-size="15" fill="#0f172a" font-weight="bold" text-anchor="start">benign</text>
+<line x1="70" x2="440" y1="370.0" y2="370.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="62" y="374.0" font-size="11" fill="#64748b" font-weight="normal" text-anchor="end">0</text>
+<line x1="70" x2="440" y1="324.0" y2="324.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="62" y="328.0" font-size="11" fill="#64748b" font-weight="normal" text-anchor="end">100</text>
+<line x1="70" x2="440" y1="278.0" y2="278.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="62" y="282.0" font-size="11" fill="#64748b" font-weight="normal" text-anchor="end">200</text>
+<line x1="70" x2="440" y1="232.0" y2="232.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="62" y="236.0" font-size="11" fill="#64748b" font-weight="normal" text-anchor="end">300</text>
+<line x1="70" x2="440" y1="186.0" y2="186.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="62" y="190.0" font-size="11" fill="#64748b" font-weight="normal" text-anchor="end">400</text>
+<line x1="70" x2="440" y1="140.0" y2="140.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="62" y="144.0" font-size="11" fill="#64748b" font-weight="normal" text-anchor="end">500</text>
+<line x1="70" x2="440" y1="370" y2="370" stroke="#94a3b8" stroke-width="1"/>
+<path d="M76.4 370 V158.2 Q76.4 155.2 79.4 155.2 H85.4 Q88.4 155.2 88.4 158.2 V370 Z" fill="#2a78d6"/>
+<path d="M90.4 370 V226.3 Q90.4 223.3 93.4 223.3 H99.4 Q102.4 223.3 102.4 226.3 V370 Z" fill="#eb6834"/>
+<path d="M104.4 370 V285.6 Q104.4 282.6 107.4 282.6 H113.4 Q116.4 282.6 116.4 285.6 V370 Z" fill="#1baf7a"/>
+<text x="96.42857142857143" y="387" font-size="12" fill="#334155" font-weight="normal" text-anchor="middle">hair</text>
+<text x="96.42857142857143" y="401" font-size="11" fill="#64748b" font-weight="normal" text-anchor="middle">normal</text>
+<path d="M129.3 370 V322.4 Q129.3 319.4 132.3 319.4 H138.3 Q141.3 319.4 141.3 322.4 V370 Z" fill="#2a78d6"/>
+<path d="M143.3 370 V346.8 Q143.3 343.8 146.3 343.8 H152.3 Q155.3 343.8 155.3 346.8 V370 Z" fill="#eb6834"/>
+<path d="M157.3 370 V353.2 Q157.3 350.2 160.3 350.2 H166.3 Q169.3 350.2 169.3 353.2 V370 Z" fill="#1baf7a"/>
+<text x="149.28571428571428" y="387" font-size="12" fill="#334155" font-weight="normal" text-anchor="middle">hair</text>
+<text x="149.28571428571428" y="401" font-size="11" fill="#64748b" font-weight="normal" text-anchor="middle">dense</text>
+<path d="M182.1 370 V352.3 Q182.1 349.3 185.1 349.3 H191.1 Q194.1 349.3 194.1 352.3 V370 Z" fill="#2a78d6"/>
+<path d="M196.1 370 V368.2 Q196.1 366.3 198.0 366.3 H206.3 Q208.1 366.3 208.1 368.2 V370 Z" fill="#eb6834"/>
+<path d="M210.1 370 V369.1 Q210.1 368.2 211.1 368.2 H221.2 Q222.1 368.2 222.1 369.1 V370 Z" fill="#1baf7a"/>
+<text x="202.14285714285714" y="387" font-size="12" fill="#334155" font-weight="normal" text-anchor="middle">hair</text>
+<text x="202.14285714285714" y="401" font-size="11" fill="#64748b" font-weight="normal" text-anchor="middle">short</text>
+<path d="M235.0 370 V275.9 Q235.0 272.9 238.0 272.9 H244.0 Q247.0 272.9 247.0 275.9 V370 Z" fill="#2a78d6"/>
+<path d="M249.0 370 V287.4 Q249.0 284.4 252.0 284.4 H258.0 Q261.0 284.4 261.0 287.4 V370 Z" fill="#eb6834"/>
+<path d="M263.0 370 V329.8 Q263.0 326.8 266.0 326.8 H272.0 Q275.0 326.8 275.0 329.8 V370 Z" fill="#1baf7a"/>
+<text x="254.99999999999997" y="387" font-size="12" fill="#334155" font-weight="normal" text-anchor="middle">ruler</text>
+<path d="M287.9 370 V346.8 Q287.9 343.8 290.9 343.8 H296.9 Q299.9 343.8 299.9 346.8 V370 Z" fill="#2a78d6"/>
+<text x="293.8571428571429" y="338.78" font-size="10" fill="#334155" font-weight="normal" text-anchor="middle">57</text>
+<path d="M301.9 370 V334.4 Q301.9 331.4 304.9 331.4 H310.9 Q313.9 331.4 313.9 334.4 V370 Z" fill="#eb6834"/>
+<text x="307.8571428571429" y="326.36" font-size="10" fill="#334155" font-weight="normal" text-anchor="middle">84</text>
+<path d="M315.9 370 V337.1 Q315.9 334.1 318.9 334.1 H324.9 Q327.9 334.1 327.9 337.1 V370 Z" fill="#1baf7a"/>
+<text x="321.8571428571429" y="329.12" font-size="10" fill="#334155" font-weight="normal" text-anchor="middle">78</text>
+<text x="307.8571428571429" y="387" font-size="12" fill="#334155" font-weight="normal" text-anchor="middle">frame</text>
+<path d="M340.7 370 V280.5 Q340.7 277.5 343.7 277.5 H349.7 Q352.7 277.5 352.7 280.5 V370 Z" fill="#2a78d6"/>
+<path d="M354.7 370 V324.2 Q354.7 321.2 357.7 321.2 H363.7 Q366.7 321.2 366.7 324.2 V370 Z" fill="#eb6834"/>
+<path d="M368.7 370 V254.8 Q368.7 251.8 371.7 251.8 H377.7 Q380.7 251.8 380.7 254.8 V370 Z" fill="#1baf7a"/>
+<text x="360.7142857142857" y="387" font-size="12" fill="#334155" font-weight="normal" text-anchor="middle">other</text>
+<path d="M393.6 370 V249.3 Q393.6 246.3 396.6 246.3 H402.6 Q405.6 246.3 405.6 249.3 V370 Z" fill="#2a78d6"/>
+<path d="M407.6 370 V211.1 Q407.6 208.1 410.6 208.1 H416.6 Q419.6 208.1 419.6 211.1 V370 Z" fill="#eb6834"/>
+<path d="M421.6 370 V183.5 Q421.6 180.5 424.6 180.5 H430.6 Q433.6 180.5 433.6 183.5 V370 Z" fill="#1baf7a"/>
+<text x="413.57142857142856" y="387" font-size="12" fill="#334155" font-weight="normal" text-anchor="middle">none</text>
+<text x="500" y="128" font-size="15" fill="#0f172a" font-weight="bold" text-anchor="start">malignant</text>
+<line x1="500" x2="870" y1="370.0" y2="370.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="492" y="374.0" font-size="11" fill="#64748b" font-weight="normal" text-anchor="end">0</text>
+<line x1="500" x2="870" y1="324.0" y2="324.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="492" y="328.0" font-size="11" fill="#64748b" font-weight="normal" text-anchor="end">100</text>
+<line x1="500" x2="870" y1="278.0" y2="278.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="492" y="282.0" font-size="11" fill="#64748b" font-weight="normal" text-anchor="end">200</text>
+<line x1="500" x2="870" y1="232.0" y2="232.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="492" y="236.0" font-size="11" fill="#64748b" font-weight="normal" text-anchor="end">300</text>
+<line x1="500" x2="870" y1="186.0" y2="186.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="492" y="190.0" font-size="11" fill="#64748b" font-weight="normal" text-anchor="end">400</text>
+<line x1="500" x2="870" y1="140.0" y2="140.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="492" y="144.0" font-size="11" fill="#64748b" font-weight="normal" text-anchor="end">500</text>
+<line x1="500" x2="870" y1="370" y2="370" stroke="#94a3b8" stroke-width="1"/>
+<path d="M506.4 370 V168.8 Q506.4 165.8 509.4 165.8 H515.4 Q518.4 165.8 518.4 168.8 V370 Z" fill="#2a78d6"/>
+<path d="M520.4 370 V270.4 Q520.4 267.4 523.4 267.4 H529.4 Q532.4 267.4 532.4 270.4 V370 Z" fill="#eb6834"/>
+<path d="M534.4 370 V265.4 Q534.4 262.4 537.4 262.4 H543.4 Q546.4 262.4 546.4 265.4 V370 Z" fill="#1baf7a"/>
+<text x="526.4285714285714" y="387" font-size="12" fill="#334155" font-weight="normal" text-anchor="middle">hair</text>
+<text x="526.4285714285714" y="401" font-size="11" fill="#64748b" font-weight="normal" text-anchor="middle">normal</text>
+<path d="M559.3 370 V350.0 Q559.3 347.0 562.3 347.0 H568.3 Q571.3 347.0 571.3 350.0 V370 Z" fill="#2a78d6"/>
+<path d="M573.3 370 V359.7 Q573.3 356.7 576.3 356.7 H582.3 Q585.3 356.7 585.3 359.7 V370 Z" fill="#eb6834"/>
+<path d="M587.3 370 V354.6 Q587.3 351.6 590.3 351.6 H596.3 Q599.3 351.6 599.3 354.6 V370 Z" fill="#1baf7a"/>
+<text x="579.2857142857143" y="387" font-size="12" fill="#334155" font-weight="normal" text-anchor="middle">hair</text>
+<text x="579.2857142857143" y="401" font-size="11" fill="#64748b" font-weight="normal" text-anchor="middle">dense</text>
+<path d="M612.1 370 V349.5 Q612.1 346.5 615.1 346.5 H621.1 Q624.1 346.5 624.1 349.5 V370 Z" fill="#2a78d6"/>
+<path d="M626.1 370 V368.2 Q626.1 366.3 628.0 366.3 H636.3 Q638.1 366.3 638.1 368.2 V370 Z" fill="#eb6834"/>
+<path d="M640.1 370 V365.6 Q640.1 362.6 643.1 362.6 H649.1 Q652.1 362.6 652.1 365.6 V370 Z" fill="#1baf7a"/>
+<text x="632.1428571428571" y="387" font-size="12" fill="#334155" font-weight="normal" text-anchor="middle">hair</text>
+<text x="632.1428571428571" y="401" font-size="11" fill="#64748b" font-weight="normal" text-anchor="middle">short</text>
+<path d="M665.0 370 V241.0 Q665.0 238.0 668.0 238.0 H674.0 Q677.0 238.0 677.0 241.0 V370 Z" fill="#2a78d6"/>
+<path d="M679.0 370 V322.4 Q679.0 319.4 682.0 319.4 H688.0 Q691.0 319.4 691.0 322.4 V370 Z" fill="#eb6834"/>
+<path d="M693.0 370 V354.1 Q693.0 351.1 696.0 351.1 H702.0 Q705.0 351.1 705.0 354.1 V370 Z" fill="#1baf7a"/>
+<text x="685.0" y="387" font-size="12" fill="#334155" font-weight="normal" text-anchor="middle">ruler</text>
+<path d="M717.9 370 V257.5 Q717.9 254.5 720.9 254.5 H726.9 Q729.9 254.5 729.9 257.5 V370 Z" fill="#2a78d6"/>
+<text x="723.8571428571429" y="249.54" font-size="10" fill="#334155" font-weight="normal" text-anchor="middle">251</text>
+<path d="M731.9 370 V205.1 Q731.9 202.1 734.9 202.1 H740.9 Q743.9 202.1 743.9 205.1 V370 Z" fill="#eb6834"/>
+<text x="737.8571428571429" y="197.1" font-size="10" fill="#334155" font-weight="normal" text-anchor="middle">365</text>
+<path d="M745.9 370 V197.7 Q745.9 194.7 748.9 194.7 H754.9 Q757.9 194.7 757.9 197.7 V370 Z" fill="#1baf7a"/>
+<text x="751.8571428571429" y="189.73999999999998" font-size="10" fill="#334155" font-weight="normal" text-anchor="middle">381</text>
+<text x="737.8571428571429" y="387" font-size="12" fill="#334155" font-weight="normal" text-anchor="middle">frame</text>
+<path d="M770.7 370 V188.1 Q770.7 185.1 773.7 185.1 H779.7 Q782.7 185.1 782.7 188.1 V370 Z" fill="#2a78d6"/>
+<path d="M784.7 370 V314.1 Q784.7 311.1 787.7 311.1 H793.7 Q796.7 311.1 796.7 314.1 V370 Z" fill="#eb6834"/>
+<path d="M798.7 370 V282.4 Q798.7 279.4 801.7 279.4 H807.7 Q810.7 279.4 810.7 282.4 V370 Z" fill="#1baf7a"/>
+<text x="790.7142857142857" y="387" font-size="12" fill="#334155" font-weight="normal" text-anchor="middle">other</text>
+<path d="M823.6 370 V308.1 Q823.6 305.1 826.6 305.1 H832.6 Q835.6 305.1 835.6 308.1 V370 Z" fill="#2a78d6"/>
+<path d="M837.6 370 V222.1 Q837.6 219.1 840.6 219.1 H846.6 Q849.6 219.1 849.6 222.1 V370 Z" fill="#eb6834"/>
+<path d="M851.6 370 V240.1 Q851.6 237.1 854.6 237.1 H860.6 Q863.6 237.1 863.6 240.1 V370 Z" fill="#1baf7a"/>
+<text x="843.5714285714286" y="387" font-size="12" fill="#334155" font-weight="normal" text-anchor="middle">none</text>
+<text x="30" y="432" font-size="13" fill="#334155" font-weight="normal" text-anchor="start">Frames: both GANs made more framed malignant images than the real data has (365 and 381 vs 251).</text>
+<text x="30" y="452" font-size="13" fill="#334155" font-weight="normal" text-anchor="start">None: both GANs made more images with no artifacts at all, in both classes.</text>
+</svg>

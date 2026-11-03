@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 468" width="900" height="468" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect x="1" y="1" width="898" height="466" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+<text x="30" y="44" font-size="20" fill="#0f172a" font-weight="bold" text-anchor="start">Counterfactual bias insertion: switched predictions</text>
+<text x="30" y="68" font-size="14" fill="#64748b" font-weight="normal" text-anchor="start">Mean number of test images whose prediction changed after the artifact was inserted. Lower is better.</text>
+<text x="30" y="90" font-size="13" fill="#64748b" font-weight="normal" text-anchor="start">Bold: lowest value in each row.</text>
+<text x="258.0" y="120" font-size="13" fill="#334155" font-weight="bold" text-anchor="middle">real</text>
+<text x="394.0" y="120" font-size="13" fill="#334155" font-weight="bold" text-anchor="middle">aug. cGAN</text>
+<text x="530.0" y="120" font-size="13" fill="#334155" font-weight="bold" text-anchor="middle">aug. GAN</text>
+<text x="666.0" y="120" font-size="13" fill="#334155" font-weight="bold" text-anchor="middle">synth. cGAN</text>
+<text x="802.0" y="120" font-size="13" fill="#334155" font-weight="bold" text-anchor="middle">synth. GAN</text>
+<text x="176" y="159.0" font-size="13" fill="#334155" font-weight="normal" text-anchor="end">frame</text>
+<rect x="191" y="133" width="134" height="42" rx="4" fill="#5598e7"/>
+<text x="258.0" y="159.0" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="middle">129</text>
+<rect x="327" y="133" width="134" height="42" rx="4" fill="#256abf"/>
+<text x="394.0" y="159.0" font-size="13" fill="#ffffff" font-weight="normal" text-anchor="middle">223</text>
+<rect x="463" y="133" width="134" height="42" rx="4" fill="#9ec5f4"/>
+<text x="530.0" y="159.0" font-size="14" fill="#0f172a" font-weight="bold" text-anchor="middle">59</text>
+<rect x="599" y="133" width="134" height="42" rx="4" fill="#256abf"/>
+<text x="666.0" y="159.0" font-size="13" fill="#ffffff" font-weight="normal" text-anchor="middle">290</text>
+<rect x="735" y="133" width="134" height="42" rx="4" fill="#104281"/>
+<text x="802.0" y="159.0" font-size="13" fill="#ffffff" font-weight="normal" text-anchor="middle">413</text>
+<text x="176" y="203.0" font-size="13" fill="#334155" font-weight="normal" text-anchor="end">ruler</text>
+<rect x="191" y="177" width="134" height="42" rx="4" fill="#9ec5f4"/>
+<text x="258.0" y="203.0" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="middle">81</text>
+<rect x="327" y="177" width="134" height="42" rx="4" fill="#9ec5f4"/>
+<text x="394.0" y="203.0" font-size="14" fill="#0f172a" font-weight="bold" text-anchor="middle">79</text>
+<rect x="463" y="177" width="134" height="42" rx="4" fill="#9ec5f4"/>
+<text x="530.0" y="203.0" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="middle">81</text>
+<rect x="599" y="177" width="134" height="42" rx="4" fill="#256abf"/>
+<text x="666.0" y="203.0" font-size="13" fill="#ffffff" font-weight="normal" text-anchor="middle">200</text>
+<rect x="735" y="177" width="134" height="42" rx="4" fill="#5598e7"/>
+<text x="802.0" y="203.0" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="middle">154</text>
+<text x="176" y="247.0" font-size="13" fill="#334155" font-weight="normal" text-anchor="end">hair (dense)</text>
+<rect x="191" y="221" width="134" height="42" rx="4" fill="#5598e7"/>
+<text x="258.0" y="247.0" font-size="14" fill="#0f172a" font-weight="bold" text-anchor="middle">109</text>
+<rect x="327" y="221" width="134" height="42" rx="4" fill="#104281"/>
+<text x="394.0" y="247.0" font-size="13" fill="#ffffff" font-weight="normal" text-anchor="middle">439</text>
+<rect x="463" y="221" width="134" height="42" rx="4" fill="#5598e7"/>
+<text x="530.0" y="247.0" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="middle">122</text>
+<rect x="599" y="221" width="134" height="42" rx="4" fill="#256abf"/>
+<text x="666.0" y="247.0" font-size="13" fill="#ffffff" font-weight="normal" text-anchor="middle">325</text>
+<rect x="735" y="221" width="134" height="42" rx="4" fill="#104281"/>
+<text x="802.0" y="247.0" font-size="13" fill="#ffffff" font-weight="normal" text-anchor="middle">1089</text>
+<text x="176" y="291.0" font-size="13" fill="#334155" font-weight="normal" text-anchor="end">hair (medium)</text>
+<rect x="191" y="265" width="134" height="42" rx="4" fill="#cde2fb"/>
+<text x="258.0" y="291.0" font-size="14" fill="#0f172a" font-weight="bold" text-anchor="middle">27</text>
+<rect x="327" y="265" width="134" height="42" rx="4" fill="#9ec5f4"/>
+<text x="394.0" y="291.0" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="middle">74</text>
+<rect x="463" y="265" width="134" height="42" rx="4" fill="#cde2fb"/>
+<text x="530.0" y="291.0" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="middle">28</text>
+<rect x="599" y="265" width="134" height="42" rx="4" fill="#5598e7"/>
+<text x="666.0" y="291.0" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="middle">163</text>
+<rect x="735" y="265" width="134" height="42" rx="4" fill="#256abf"/>
+<text x="802.0" y="291.0" font-size="13" fill="#ffffff" font-weight="normal" text-anchor="middle">284</text>
+<text x="176" y="335.0" font-size="13" fill="#334155" font-weight="normal" text-anchor="end">hair (short)</text>
+<rect x="191" y="309" width="134" height="42" rx="4" fill="#9ec5f4"/>
+<text x="258.0" y="335.0" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="middle">77</text>
+<rect x="327" y="309" width="134" height="42" rx="4" fill="#5598e7"/>
+<text x="394.0" y="335.0" font-size="13" fill="#0f172a" font-weight="normal" text-anchor="middle">180</text>
+<rect x="463" y="309" width="134" height="42" rx="4" fill="#9ec5f4"/>
+<text x="530.0" y="335.0" font-size="14" fill="#0f172a" font-weight="bold" text-anchor="middle">54</text>
+<rect x="599" y="309" width="134" height="42" rx="4" fill="#256abf"/>
+<text x="666.0" y="335.0" font-size="13" fill="#ffffff" font-weight="normal" text-anchor="middle">249</text>
+<rect x="735" y="309" width="134" height="42" rx="4" fill="#256abf"/>
+<text x="802.0" y="335.0" font-size="13" fill="#ffffff" font-weight="normal" text-anchor="middle">380</text>
+<text x="176" y="395" font-size="12" fill="#64748b" font-weight="normal" text-anchor="end">switched</text>
+<rect x="190" y="382" width="90" height="16" rx="3" fill="#cde2fb"/>
+<text x="235" y="414" font-size="11" fill="#64748b" font-weight="normal" text-anchor="middle">0–49</text>
+<rect x="286" y="382" width="90" height="16" rx="3" fill="#9ec5f4"/>
+<text x="331" y="414" font-size="11" fill="#64748b" font-weight="normal" text-anchor="middle">50–99</text>
+<rect x="382" y="382" width="90" height="16" rx="3" fill="#5598e7"/>
+<text x="427" y="414" font-size="11" fill="#64748b" font-weight="normal" text-anchor="middle">100–199</text>
+<rect x="478" y="382" width="90" height="16" rx="3" fill="#256abf"/>
+<text x="523" y="414" font-size="11" fill="#64748b" font-weight="normal" text-anchor="middle">200–399</text>
+<rect x="574" y="382" width="90" height="16" rx="3" fill="#104281"/>
+<text x="619" y="414" font-size="11" fill="#64748b" font-weight="normal" text-anchor="middle">400+</text>
+<text x="30" y="446" font-size="12.5" fill="#334155" font-weight="normal" text-anchor="start">Models trained on real data, or real plus GAN images, switch the fewest predictions. Models trained only on synthetic data switch the most.</text>
+</svg>
